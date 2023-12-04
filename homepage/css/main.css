@@ -131,6 +131,14 @@ p {
   line-height: 1.285;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 address {
   font-style: normal;
 }
@@ -157,6 +165,10 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
 }
 
 .header-divider {
@@ -226,6 +238,10 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
+  background: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -272,6 +288,9 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url('../img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
 }
@@ -454,31 +473,7 @@ input[type=button] {
    Modify as content requires.
    ========================================================================== */
 
-aside .form {
-  margin-top: 30px;
-}
 
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
-
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
 
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
@@ -528,6 +523,10 @@ input[type=button] {
 
   /* Hero Area */
 
+  .hero-area {
+    min-height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -574,6 +573,7 @@ input[type=button] {
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
